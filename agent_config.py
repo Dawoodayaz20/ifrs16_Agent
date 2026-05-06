@@ -14,10 +14,10 @@ external_client = AsyncOpenAI(
 )
 
 model = OpenAIChatCompletionsModel(
-    model="gemini-2.5-flash",
+    model="gemini-2.5-flash-lite",
     openai_client=external_client
 )
-
+# model = "gemini-2.5-flash"    //When one model is experiencing high demand, use this or model = "gemini-2.5-pro" 
 config = RunConfig(
     model=model,
     model_provider=external_client,
