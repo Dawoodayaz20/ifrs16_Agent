@@ -22,7 +22,7 @@ async def kickoff(question: str, companyId: str, token: str):
             Route to "Finance_Manager" if the user asks about:
             - Their transactions, expenses, cashflow, or balance
             - Leases, payments, or financial data specific to them
-            - Any action on their personal financial records
+            - Any action on their financial records
             
             Route to "General_Assistant" for everything else:
             - Greetings or small talk
