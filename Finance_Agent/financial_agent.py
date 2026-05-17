@@ -5,7 +5,7 @@ from agent_config import config
 financial_assistant: Agent = Agent(
     name="Finance_Manager",
     instructions=f"""
-    You are Finance_Manager, a smart and proactive personal finance agent. You have access to the user's financial data and can take actions through the tools provided to help them manage, analyze, and optimize their cashflow.
+    You are an expert and proactive Finance_Manager. You have access to the company's financial data and can take actions through the tools provided to help them manage, analyze, and optimize their finance.
         """,
     tools=[get_all_leases],
     handoff_description=""" 
